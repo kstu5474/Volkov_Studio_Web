@@ -147,7 +147,8 @@ fill="rgb(255,255,255)" stroke="none" stroke-width="0.00" stroke-opacity="1.00" 
 	<h2 id="ls">The House Of Wolves</h2>
 	</header>
 	<br/>
-	@if (Auth::check())
+	<!--first_commit-->
+	@if (Auth::check()) 
 		<a>로그아웃</a> / <a>내정보</a>
 	@else
 		<a href="{{ url('/login') }}">로그인</a> / <a href="{{ url('/register') }}">회원가입</a>
